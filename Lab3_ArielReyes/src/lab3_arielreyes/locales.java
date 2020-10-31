@@ -19,6 +19,12 @@ public class locales {
     public locales() {
     }
 
+    public locales(String nombre_local, ArrayList<personas> empleados, ArrayList<productos> lista_producto) {
+        this.nombre_local = nombre_local;
+        this.empleados = empleados;
+        this.lista_producto = lista_producto;
+    }
+
     public String getNombre_local() {
         return nombre_local;
     }

@@ -18,7 +18,7 @@ public class cliente extends personas {
     double dinero;
     ArrayList<productos> compras;
 
-    public cliente(double dinero, String id, String usuario, String nombre) {
+    public cliente(double dinero, ArrayList<productos> compras, String id, String usuario, String nombre) {
         super(id, usuario, nombre);
         this.dinero = dinero;
         this.compras = compras;
@@ -51,7 +51,7 @@ public class cliente extends personas {
 
     @Override
     public String toString() {
-        return "cliente{" + "dinero=" + dinero + ", compras=" + compras + '}';
+        return super.toString() + "cliente{" + "dinero=" + dinero + ", compras=" + compras + '}';
     }
 
 }

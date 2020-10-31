@@ -13,6 +13,15 @@ import java.util.ArrayList;
  */
 public class tiendas extends locales {
 
+    public tiendas() {
+        super(); 
+    }
+
+    public tiendas(String nombre_local, ArrayList<personas> empleados, ArrayList<productos> lista_producto) {
+        super(nombre_local, empleados, lista_producto);
+    }
+    
+    
 
     public ArrayList<productos> getLista_producto() {
         return lista_producto;
@@ -22,5 +31,12 @@ public class tiendas extends locales {
 
         this.lista_producto = lista_producto;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "tiendas{" + '}';
+    }
+
+
 
 }
