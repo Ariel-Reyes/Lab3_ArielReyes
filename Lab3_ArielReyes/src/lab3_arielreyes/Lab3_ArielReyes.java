@@ -5,6 +5,9 @@
  */
 package lab3_arielreyes;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author Ariel
@@ -15,7 +18,10 @@ public class Lab3_ArielReyes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("prueba de subida");
+        ArrayList<productos> f = new ArrayList(); 
+        Date d = new Date();
+        f.add(new comida(d, "bebida", "algo rico", "fetuchonio", 0));
+        System.out.println(f);
     }
     
 }
